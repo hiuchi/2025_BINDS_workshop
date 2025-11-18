@@ -139,7 +139,10 @@ nextflow run nf-core/rnaseq \
 
 ## 5. nf-core/differentialabundance による発現変動解析
 ### 5.1 コントラストファイルの作成
-比較のレイアウトを記述し、`meta/contrasts.csv`として保存します。
+
+echo -e "id,variable,reference,target,blocking\nstress_vs_control,condition,control,stress," > contrasts.csv
+
+比較のレイアウトを記述し、`contrasts.csv`として保存します。
 ```
 id,variable,reference,target,blocking
 stress_vs_control,condition,control,stress
@@ -151,7 +154,7 @@ nextflow run nf-core/differentialabundance \
 -r 1.5.0 \
 -profile docker \
 --input samplesheet_rnaseq.csv \
---contrasts meta/contrasts.csv \
+--contrasts contrasts.csv \
 --matrix results/salmon/salmon.merged.gene_counts.tsv \
 --gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf.gz \
 --outdir DEG
