@@ -156,7 +156,7 @@ nextflow run nf-core/differentialabundance \
 --input samplesheet_rnaseq.csv \
 --contrasts contrasts.csv \
 --matrix results/salmon/salmon.merged.gene_counts.tsv \
---gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf.gz \
+--gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf \
 --outdir DEG
 ```
 
