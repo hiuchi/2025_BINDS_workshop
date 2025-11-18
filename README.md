@@ -82,7 +82,7 @@ chr1	ENSEMBL	transcript	3172239	3172348	.	+	.	gene_id "ENSMUSG00000064842.3"; tr
 
 ## 4. nf-core/rnaseq による定量
 ### 4.1 サンプルシートの作成
-サンプル名と FASTQ ファイルへのパスの対応を記述し、`meta/samplesheet.csv`として保存します。
+サンプル名と FASTQ ファイルへのパスの対応を記述し、`samplesheet_rnaseq.csv`として保存します。
 ```csv
 sample,fastq_1,strandedness,condition
 stress1,/Users/ユーザ名/workshop/fastq/SRR24350711.fastq.gz,auto,stress
