@@ -126,7 +126,7 @@ nextflow run nf-core/rnaseq \
   -r 3.21.0 \
   -profile docker \
   -c cap.nf \
-  --input meta/samplesheet_rnaseq.csv \
+  --input samplesheet_rnaseq.csv \
   --transcript_fasta ref/gencode.vM38.transcripts.fa.gz \
   --gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf.gz \
   --gencode \
