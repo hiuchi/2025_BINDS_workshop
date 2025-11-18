@@ -148,13 +148,13 @@ stress_vs_control,condition,control,stress
 ### 5.2 nf-core/differentialabundance による発現変動解析
 ```
 nextflow run nf-core/differentialabundance \
-     -r 1.5.0 \
-     -profile docker \
-     --input meta/samplesheet.csv \
-     --contrasts meta/contrasts.csv \
-     --matrix results/salmon/salmon.merged.gene_counts.tsv \
-     --gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf.gz \
-     --outdir DEG
+-r 1.5.0 \
+-profile docker \
+--input samplesheet_rnaseq.csv \
+--contrasts meta/contrasts.csv \
+--matrix results/salmon/salmon.merged.gene_counts.tsv \
+--gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf.gz \
+--outdir DEG
 ```
 
 ---
