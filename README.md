@@ -140,9 +140,12 @@ nextflow run nf-core/rnaseq \
 ## 5. nf-core/differentialabundance による発現変動解析
 ### 5.1 コントラストファイルの作成
 
+下記のコマンドで`contrasts.csv`を作成します。
+```
 echo -e "id,variable,reference,target,blocking\nstress_vs_control,condition,control,stress," > contrasts.csv
+```
 
-比較のレイアウトを記述し、`contrasts.csv`として保存します。
+`contrasts.csv`の中身は下記のようになっています。
 ```
 id,variable,reference,target,blocking
 stress_vs_control,condition,control,stress
