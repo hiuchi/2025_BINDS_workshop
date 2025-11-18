@@ -127,8 +127,8 @@ nextflow run nf-core/rnaseq \
 -profile docker \
 -c cap.nf \
 --input samplesheet_rnaseq.csv \
---transcript_fasta ref/gencode.vM38.transcripts.fa.gz \
---gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf.gz \
+--transcript_fasta ref/gencode.vM38.transcripts.fa \
+--gtf ref/gencode.vM38.chr_patch_hapl_scaff.annotation.gtf \
 --gencode \
 --skip_trimming \
 --skip_alignment \
