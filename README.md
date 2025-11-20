@@ -15,7 +15,7 @@
   - メモリ : 16GB
   - ストレージ : 256GB
   - OS : macOS Tahoe 26.0.1
-- `/Users/ユーザ名/workshop`で解析を行います。
+- `/Users/binds/workshop`で解析を行います。
 
 ---
 
@@ -87,16 +87,16 @@ chr1	ENSEMBL	transcript	3172239	3172348	.	+	.	gene_id "ENSMUSG00000064842.3"; tr
 サンプル名と FASTQ ファイルへのパスの対応を記述し、`samplesheet_rnaseq.csv`として保存します。
 ```csv
 sample,fastq_1,strandedness,condition
-stress1,/Users/ユーザ名/workshop/fastq/SRR24350711.fastq.gz,auto,stress
-stress2,/Users/ユーザ名/workshop/fastq/SRR24350712.fastq.gz,auto,stress
-stress3,/Users/ユーザ名/workshop/fastq/SRR24350713.fastq.gz,auto,stress
-stress4,/Users/ユーザ名/workshop/fastq/SRR24350714.fastq.gz,auto,stress
-stress5,/Users/ユーザ名/workshop/fastq/SRR24350715.fastq.gz,auto,stress
-control1,/Users/ユーザ名/workshop/fastq/SRR24350716.fastq.gz,auto,control
-control2,/Users/ユーザ名/workshop/fastq/SRR24350717.fastq.gz,auto,control
-control3,/Users/ユーザ名/workshop/fastq/SRR24350718.fastq.gz,auto,control
-control4,/Users/ユーザ名/workshop/fastq/SRR24350719.fastq.gz,auto,control
-control5,/Users/ユーザ名/workshop/fastq/SRR24350720.fastq.gz,auto,control
+stress1,/Users/binds/workshop/fastq/SRR24350711.fastq.gz,auto,stress
+stress2,/Users/binds/workshop/fastq/SRR24350712.fastq.gz,auto,stress
+stress3,/Users/binds/workshop/fastq/SRR24350713.fastq.gz,auto,stress
+stress4,/Users/binds/workshop/fastq/SRR24350714.fastq.gz,auto,stress
+stress5,/Users/binds/workshop/fastq/SRR24350715.fastq.gz,auto,stress
+control1,/Users/binds/workshop/fastq/SRR24350716.fastq.gz,auto,control
+control2,/Users/binds/workshop/fastq/SRR24350717.fastq.gz,auto,control
+control3,/Users/binds/workshop/fastq/SRR24350718.fastq.gz,auto,control
+control4,/Users/binds/workshop/fastq/SRR24350719.fastq.gz,auto,control
+control5,/Users/binds/workshop/fastq/SRR24350720.fastq.gz,auto,control
 ```
 ### 4.2 キャップ指定ファイルの作成
 今回は廉価なマシンを使用しているため、メモリが足りなくなりエラーが出ることがあります。`cap.nf`というファイルを作成し Nextflow に読み込ませることで、メモリを使いすぎないようにします。
